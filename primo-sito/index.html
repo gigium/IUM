@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title> il mio sito </title>
+
+  <link rel="stylesheet" href="primo-sito-css.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <script type="text/javascript" src="js/map-script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esercizio di IUM pagina personale ">
+    <meta name="keywords" content="personale,esami,hobby,email">
+    <meta name="author" content="Federico De Laurentiis">
+
+
+</head>
+<body>
+<div class="container">
+    <h1 class="titolo"> 1.Dati Personali </h1>
+    <p>NOME: Federico </p>
+    <p>COGNOME: De Laurentiis</p>
+    <p>DATA DI NASCITA : 30/05/1995</p>
+
+    <hr>
+
+    <h2 class="titolo"> 2.ALcune mie foto </h2>
+    <figure>
+        <img src="media/foto_profilo.jpg" alt="foto-profilo"
+             width="240" height="240">
+        <img src="media/altra_foto_profilo.jpg" alt="foto-profilo"
+             width="400" height="240">
+        <figcaption> ecco come sono fatto</figcaption>
+    </figure>
+
+    <hr>
+
+    <h3 class="titolo">3. Lista ordinata di esami sostenuti</h3>
+    <p>primo anno</p>
+
+    <ol>
+        <li> Programmazione</li>
+        <li> Matematica Discreta</li>
+        <li> Architettura Degli Elaboratori e Sistemi Operativi</li>
+        <li> Analisi</li>
+        <li> Laboratorio di Programmazione</li>
+        <li> Inglese</li>
+    </ol>
+
+    <p>secondo anno</p>
+
+    <ol start="7">
+        <li> Calcolo Numerico</li>
+        <li> Algoritmi e Strutture Dati</li>
+        <li> Probabilità e Statistca</li>
+    </ol>
+    <hr>
+    <h4 class="titolo">4. Competenze tecniche </h4>
+    <p>so rollare i drummini </p>
+
+    <hr>
+
+    <h5 class="titolo">5. i miei hobby </h5>
+    <video width="50%" height="50%" controls>
+        <source src="IMG_0457.MOV">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+
+    <h5 class="titolo">6. contattami ! </h5>
+
+    <form name="registrazione" method="post" action="/send" class="form-group">
+        <fieldset>
+            <legend>Contattami</legend>
+            <p><label>Nome*</label>
+                <br>
+                <input class="form-control" type="text" name="nome" placeholder="inserisci nome e cognome"
+                       required autocomplete="on"></p>
+            <p><label>Email*</label>
+                <br>
+                <input class="form-control" type="email" name="email" placeholder="tua@mail.it"  required
+                       autocomplete="on"></p>
+
+            <p><label>Tua pagina*</label> <br>
+                <input class="form-control" type="url" name="pagina" placeholder="url" ></p>
+            <!--l'autocomplete fanculo-->
+
+            <p><label>Telefono</label>
+                <br>
+                <input class="form-control" type="tel" name="telefono" placeholder="inserisci un recapito telefonico"
+                       autocomplete="on">
+
+            <p><label>Oggetto*</label> <br>
+                <input class="form-control" type="text" name="pass" placeholder="inserisci oggetto"
+                       required></p>
+
+            <p><label>Testo</label> <br>
+                <textarea class="form-control" rows="3"  name="pass" placeholder="testo" required></textarea>
+
+
+            <p><input class="btn btn-default btn btn-primary" type="submit" name="contatta" value="Invia"></p>
+        </fieldset>
+
+    </form>
+
+
+    <div class="container">
+        <p id="demo">Click the button to get your position.</p>
+        <div id="mapholder"></div>
+        <button onclick="getLocation()" class="btn btn-default btn-lg">Try It</button>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
